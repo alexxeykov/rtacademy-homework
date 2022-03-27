@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Бронювання</title>
+    <style>
+        li {
+            list-style-type: none;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>Бронювання залу фотостудії</h1>
+</header>
+<nav>
+    Меню навігації
+    <ul>
+        <li><a href="index.html">Перша сторінка</a></li>
+        <li><a href="contacts.html">Контакти</a></li>
+        <li><a href="booking.html">Бронювання залу фотостудії</a></li>
+    </ul>
+</nav>
+<main>
+    <form action="/booking" method="post">
+        <ul>
+            <li>
+                <label for="surname">* Прізвище:</label>
+                <br>
+                <input type="text" id="surname" name="usersurname" minlength="2" maxlength="64"
+                       placeholder="Введіть прізвище" required>
+            </li>
+            <li>
+                <label for="name">* Імʼя:</label>
+                <br>
+                <input type="text" id="name" name="username" minlength="2" maxlength="64" placeholder="Введіть ім'я"
+                       required>
+            </li>
+            <li>
+                <label for="mail">* Email:</label>
+                <br>
+                <input type="email" id="mail" name="usermail" minlength="6" maxlength="255" placeholder="Введіть email"
+                       required>
+            </li>
+            <li>
+                <label for="phone">* Телефон:</label>
+                <br>
+                <input type="tel" id="phone" name="userphone" minlength="13" maxlength="13" placeholder="+380000000000"
+                       required>
+            </li>
+            <li>
+                <label for="instagram">Профіль Instagram:</label>
+                <br>
+                <input type="url" id="instagram" name="userinstagram" minlength="23" maxlength="255"
+                       placeholder="https://instagram.com/user">
+            </li>
+            <li>
+                <label for="hall">* Зал:</label>
+                <br>
+                <select id="hall" name="hall" required>
+                    <option value="" selected disabled hidden>Оберіть зал</option>
+                    <option value="hall-1">Зал 1</option>
+                    <option value="hall-2">Зал 2</option>
+                    <option value="hall-3">Зал 3</option>
+                </select>
+            </li>
+            <li>
+                <label for="datetime-start">* Дата і час початку:</label>
+                <br>
+                <input type="datetime-local" name="datetime-start" id="datetime-start" max="2023-01-01T00:00" required>
+            </li>
+            <li>
+                <label for="datetime-end">* Дата і час кінця:</label>
+                <br>
+                <input type="datetime-local" name="datetime-end" id="datetime-end" max="2023-01-01T00:00" required>
+            </li>
+            <li>
+                <label for="people-count">* Кількість людей в залі:</label>
+                <br>
+                <input type="number" id="people-count" name="people-count" min="1" max="10" required>
+            </li>
+            <li>
+                <label for="color">Колір фона:</label>
+                <br>
+                <input type="color" id="color" name="color">
+            </li>
+            <li>
+                <label for="message">Коментар:</label>
+                <br>
+                <textarea id="message" name="usermessage"></textarea>
+            </li>
+            <li>
+                <input type="checkbox" required>Я погоджуюсь з <a href="">правилами фотостудії</a>
+            </li>
+            <li>
+                <button type="reset">Очистити</button>
+                <button type="submit">Надіслати</button>
+            </li>
+        </ul>
+    </form>
+</main>
+</body>
+</html>

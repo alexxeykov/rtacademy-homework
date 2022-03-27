@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="utf-8">
+    <title>Назва сторінки</title>
+</head>
+<body>
+<header>
+</header>
+<main>
+    <img srcset="images/tesla.jpg 1200w"
+         sizes="(min-width: 1280px) 1200px,
+            (min-width: 768px) 740px,
+            100vw"
+         src="images/tesla.jpg" alt="Car">
+
+
+    <picture>
+        <source
+                srcset="images/tesla_model_s.jpg 1200w"
+                sizes="(min-width: 1280px) 1200px,
+             (min-width: 768px) 400px,
+             100vw">
+        <img src="images/tesla_model_s.jpg" alt="Tesla">
+    </picture>
+
+    <picture>
+        <source srcset="images/model-x.webp" type="image/webp">
+        <img src="images/model-x.webp" alt="model X"/>
+    </picture>
+
+</main>
+</body>
+</html>

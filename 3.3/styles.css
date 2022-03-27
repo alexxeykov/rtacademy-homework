@@ -1,0 +1,10 @@
+#test{
+    width: 400px;
+    height: auto;
+    background-color: #f1faee;
+    margin: 20px 40px;
+    border: 5px solid #aad9dc;
+    padding: 20px 15px 30px;
+    color:  #457b9d;
+    font-family: Arial;
+}

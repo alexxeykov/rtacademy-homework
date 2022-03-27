@@ -1,0 +1,40 @@
+body{
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 120%;
+    color: #333333;
+}
+
+h1{
+    line-height: 140%;
+    text-align: center;
+}
+
+h2{
+    line-height: 140%;
+}
+
+h3{
+    line-height: 140%;
+}
+
+h4{
+    line-height: 140%;
+}
+
+h5{
+    line-height: 140%;
+}
+
+h6{
+    line-height: 140%;
+}
+
+a{
+    color: #000;
+    text-decoration: none;
+}
+
+a:hover{
+    color:#00008b;
+}
