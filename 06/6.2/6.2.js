@@ -17,12 +17,3 @@ let cityNameFirstLetter = cityName[0];
 cityNameCapitalized = cityName.toLowerCase().replace(cityNameFirstLetter, cityNameFirstLetter.toUpperCase());
 
 console.log(cityNameCapitalized);
-
-//4 варіант. Розглядали на уроці
-cityName = 'одеСА';
-cityNameFirstLetter = cityName.substring(0, 1).toUpperCase();
-let cityNameOtherLetters = cityName.substring(1).toLowerCase();
-
-cityNameCapitalized = cityNameFirstLetter + cityNameOtherLetters;
-
-console.log(cityNameCapitalized);
