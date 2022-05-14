@@ -1,25 +1,28 @@
-// Простий, але не дуже гарний варіант з заміною маленьких літер на великі і навпаки лише для міста Київ
+// 1 варіант. Простий, але жахливий варіант з заміною маленьких літер на великі і навпаки. Працює лише для міста Київ
 let cityName = 'киїВ';
 cityName = cityName.replace('к', 'К');
-cityNameCapitalized = cityName.replace('В', 'в')
+let cityNameCapitalized = cityName.replace('В', 'в')
 
 console.log(cityNameCapitalized);
 
-// Більш кращий варіант, який підійде майже для будь-якого міста
-// Львів
+// 2 варіант. На мій погляд найпростіший та найкращий варіант, який підійде для міст з простою назвою, які сладаються з одного слова
 cityName = 'лЬвів';
-let cityNameCapitalized2 = cityName[0].toUpperCase() + cityName.substring(1).toLowerCase();
+cityNameCapitalized = cityName[0].toUpperCase() + cityName.substring(1).toLowerCase();
 
-console.log(cityNameCapitalized2);
+console.log(cityNameCapitalized);
 
-//Одеса
-cityName = 'одеСА';
-let cityNameCapitalized3 = cityName[0].toUpperCase() + cityName.substring(1).toLowerCase();
-
-console.log(cityNameCapitalized3);
-
-//Харків
+//3 варіант. Також буде працювати з простими назвами міст, які сладаються з одного слова
 cityName = 'хАРКіВ';
-let cityNameCapitalized4 = cityName[0].toUpperCase() + cityName.substring(1).toLowerCase();
+let cityNameFirstLetter = cityName[0];
+cityNameCapitalized = cityName.toLowerCase().replace(cityNameFirstLetter, cityNameFirstLetter.toUpperCase());
 
-console.log(cityNameCapitalized4);
+console.log(cityNameCapitalized);
+
+//4 варіант. Розглядали на уроці
+cityName = 'одеСА';
+cityNameFirstLetter = cityName.substring(0, 1).toUpperCase();
+let cityNameOtherLetters = cityName.substring(1).toLowerCase();
+
+cityNameCapitalized = cityNameFirstLetter + cityNameOtherLetters;
+
+console.log(cityNameCapitalized);
