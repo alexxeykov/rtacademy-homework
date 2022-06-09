@@ -10,7 +10,13 @@ Kryvyy Rih,47.9283,33.3450,Ukraine,652380
 Mykolayiv,46.9677,31.9843,Ukraine,510840
 `;
 
-function parseCSV() {
+function parseCSV( csvFileContent ) {
+
+    const wrongType = 'Очікую вхідні дані у вигляді рядка'
+
+    if ( typeof csvFileContent !== 'string' ) {
+        return wrongType
+    }
 
     const resultArray = [];
     const cityArray = csvFileContent.split( "\n" );
@@ -25,10 +31,10 @@ function parseCSV() {
 
         resultArray.push(
             {
-                'city': getValue[ 0 ].toString(),
+                'city': getValue[ 0 ].toString().trim(),
                 'latitude': parseFloat( getValue[ 1 ] ),
                 'longitude': parseFloat( getValue[ 2 ] ),
-                'country': getValue[ 3 ].toString(),
+                'country': getValue[ 3 ].toString().trim(),
                 'population': parseInt( getValue[ 4 ] ),
             } );
     }
