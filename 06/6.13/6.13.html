@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css"
+          href="styles.css">
+    <title>6.13</title>
+</head>
+<body>
+<div class="date-form">
+    <div class="date-block">
+        <div class="date-block-name">
+            <label for="start-date" class="date-field-name">Дата і час початку</label>
+        </div>
+        <div>
+            <input type="datetime-local" id="start-date"
+                   name="start-date"
+                   min="0001-01-01T00:01" max="9999-12-31T23:59">
+        </div>
+    </div>
+    <div class="date-block">
+        <div class="date-block-name">
+            <label for="end-date" class="date-field-name">Дата і час кінця</label>
+        </div>
+        <div>
+            <input type="datetime-local" id="end-date"
+                   name="end-date"
+                   min="0001-01-01T00:01" max="9999-12-31T23:59">
+        </div>
+    </div>
+    <div class="result-button-block">
+        <button id="result-button">Розрахувати різницю</button>
+    </div>
+</div>
+<script src="6.13.js"></script>
+
+
+
+</body>
+</html>
