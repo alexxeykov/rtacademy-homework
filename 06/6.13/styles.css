@@ -1,0 +1,77 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 1.25rem;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    /*justify-content: center;*/
+}
+
+.date-form {
+    /*margin: 2rem 0 0 25rem;*/
+    /*justify-content: space-around;*/
+    margin: 2rem;
+    margin-left: 25rem;
+}
+
+.date-block {
+    margin-bottom: 1.5rem;
+}
+
+.date-block-name {
+    margin-bottom: 0.25rem;
+}
+
+.date-field-name {
+    color: #777;
+}
+
+#start-date, #end-date {
+    border-radius: 0.5rem;
+    padding: 0.25rem 0.75rem;
+    border: 2px solid #777;
+    color: #777;
+    width: 15rem;
+}
+
+#result-button {
+    border-radius: 0.5rem;
+    padding: 0.5rem 0.75rem;
+    border: none;
+    background: #0185fc;
+    color: #fff;
+    width: 15rem;
+    cursor: pointer;
+}
+
+#result-button:hover {
+    background: #0000FF;
+}
+
+#result-button:active {
+    background: #0185fc;
+}
+
+.result-block {
+    width: 20rem;
+    height: 10rem;
+    background: #f8f9fb;
+    margin: 2rem;
+    border: 2px solid #e0e4e7;
+    border-radius: 0.5rem;
+}
+
+.result-block p {
+    margin: 0.75rem;
+}
+
+h2 {
+    font-weight: 100;
+    border-bottom: 2px solid #e0e4e7;
+    padding: 0.75rem ;
+    background: #f0f1f3;
+}
